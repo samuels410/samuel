@@ -36,3 +36,11 @@ end
 group :production do
 	gem 'pg', '0.12.2'
 end
+gem 'devise'
+gem "simple_form", ">= 2.0.4"
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+gem 'oauth2'
+gem "cancan", ">= 1.6.8"
+gem "rolify", ">= 3.2.0"
