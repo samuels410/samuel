@@ -14,6 +14,8 @@ group :development, :test do
 	gem 'guard-rspec', '1.2.1'
 	gem 'guard-spork', '1.2.0'  
 	gem 'spork', '0.9.2'
+	gem "better_errors", ">= 0.6.0"
+	gem "binding_of_caller", ">= 0.7.1"
 end
 
 # Gems used only for assets and not required
@@ -44,3 +46,4 @@ gem 'omniauth-linkedin'
 gem 'oauth2'
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
+gem "rails_config"

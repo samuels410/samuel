@@ -8,6 +8,13 @@
 					<li><%= link_to "Galary", galary_path %></li>
 					<li><a href="#myModal1" role="link"  data-toggle="modal">About Me</a></li>	
 					<li><a href="#myModal" role="link"  data-toggle="modal">Contact</a></li>
+					<% if user_signed_in? %>
+					<li><%= link_to current_user.email ,edit_user_registration_path %>  </li>
+					<li><%= link_to "Log out", destroy_user_session_path, method: "delete" %></li>
+					<% else %>
+					<li><%= link_to "Login", new_user_session_path %></li>
+					<li><%= link_to "Create Account", new_user_registration_path %></li>
+					<% end %>
 				</ul>
 			</nav>
 		</div>

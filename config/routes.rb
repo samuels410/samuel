@@ -1,10 +1,13 @@
 Operation::Application.routes.draw do
-root to: 'home#home'
+  devise_for :users
+
+root to: 'posts#index'
 
   match '/galary' ,    to: 'home#galary'
   match '/about' ,    to: 'home#about'
   match '/contact' ,    to: 'home#contact'
-  
+  resources :posts 
+  resources :users  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

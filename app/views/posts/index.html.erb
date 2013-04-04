@@ -55,12 +55,21 @@
 		</ol>
 		<%= will_paginate @posts %>
 	</div>
-<div>
-<% if user_signed_in? %>
+	<div>
+		<% if user_signed_in? %>
+		<div class="row">
+			<aside class="span6">
+				<section>
+					<%= render 'shared/user_info' %>
+				</section>
+				<section>
+					<%= render 'shared/post_form' %>
+				</section>
+			</aside>
+		</div>
+		<% else %>
 
-<% else %>
-
-<% end %>
-</div>
+		<% end %>
+	</div>
 
 </div>
