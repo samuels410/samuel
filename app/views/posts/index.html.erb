@@ -48,7 +48,7 @@
 
 	</script>
 
-	<div class="span6 offset3">
+	<div class="span10 ">
 		<h3>Posts(<%= @posts.count %>)</h3>
 		<ol class="posts">
 			<%= render @posts %>
@@ -58,8 +58,9 @@
 	<div>
 		<% if user_signed_in? %>
 		<div class="row">
-			<aside class="span6">
+			<aside class="span10">
 				<section>
+					<br>
 					<%= render 'shared/user_info' %>
 				</section>
 				<section>

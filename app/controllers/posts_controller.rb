@@ -12,6 +12,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@posts = Post.paginate(page: params[:page])
 		@post = current_user.posts.build(params[:post])
 		if @post.save
 			flash[:success] = "Post created!"
