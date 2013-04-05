@@ -1,7 +1,7 @@
 mailserver:
   address: smtp.gmail.com
   port: 587
-  domain: gmail.com
+  domain: santhosh.herokuapp.com
   user_name: santhoshs410@gmail.com
   password: qazqazqazxx
 admin_mail:
